@@ -1,5 +1,5 @@
 <?php 
-$inputPassword = strlen($_GET["user-password"] ?? false);
+$inputPassword = intval($_GET["user-password"] ?? false) ;
 
 
 $simboli["minuscole"] = 'abcdefghijklmnopqrstuvwxyz';
@@ -29,5 +29,6 @@ if ($speciali == true){
 
 $pwgen = substr(str_shuffle($arrayChars), 0, $inputPassword);
 $_SESSION['pwstamp'] = $pwgen;
+
 
 ?>

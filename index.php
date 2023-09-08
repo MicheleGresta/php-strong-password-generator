@@ -1,6 +1,6 @@
 <?php
 
-include "./functions.php"
+include_once "./functions.php"
 
 
 ?>
@@ -22,7 +22,8 @@ include "./functions.php"
     <div class="container py-5">
 
         <form method="GET">
-            <input type="text" name="user-password" class="mb-5">
+            <input type="text" name="user-password" class="mb-5" placeholder="Max 26">
+
 
             <button type="submit" class="btn btn-danger">Genera</button>
             <div class="container-checks">
